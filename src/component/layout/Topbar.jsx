@@ -1,0 +1,29 @@
+import { GiOpenBook, GiRamProfile, GiHeadShot,} from 'react-icons/gi'
+import { Link } from 'react-router-dom'
+
+const Topbar = () => {
+    return (
+      <header className="fixed top-0 z-50 w-full h-16 bg-background shadow-sm flex items-center justify-between px-4 antialiased">
+        {/* Logo */}
+        <Link to="/" className="inline-flex items-center gap-2">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
+            <GiOpenBook className="h-7 w-7 text-background/30" />
+          </div>
+  
+          <h1 className="font-sans text-3xl font-semibold text-primary">
+            WordGym
+          </h1>
+        </Link>
+  
+        {/* Profile */}
+        <Link
+          to="/profile"
+          className="flex h-10 w-10 items-center justify-center rounded-full bg-primary"
+        >
+          <GiHeadShot className="h-7 w-7 text-background/30" />
+        </Link>
+      </header>
+    )
+  }
+
+export default Topbar
