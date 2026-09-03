@@ -11,20 +11,24 @@ import Profile from './pages/Profile'
 
 const App = () => {
   return (
-    <div className='max-h-15'>
+    
       <BrowserRouter>
-        <Topbar/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/write' element={<Write/>}/>
-          <Route path='/progress' element={<Progress/>}/>
-          <Route path='/history' element={<History/>}/>
-          <Route path='/profile' element={<Profile/>}/>
-        </Routes>
-        <Navbar/>
-      
+        <div className='max-h-screen flex'>
+          <Topbar/>
+          <Navbar/>
+          <div className='flex-1 min-h-0 oveflow-y-auto'>
+            <Routes>          
+              <Route path='/' element={<Home/>}/>
+              <Route path='/write' element={<Write/>}/>
+              <Route path='/progress' element={<Progress/>}/>
+              <Route path='/history' element={<History/>}/>
+              <Route path='/profile' element={<Profile/>}/>         
+            </Routes>
+            </div>
+         
+        </div>
       </BrowserRouter>
-    </div>
+    
   )
 }
 
