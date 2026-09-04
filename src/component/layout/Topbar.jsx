@@ -8,7 +8,7 @@ const Topbar = () => {
         {/* Logo */}
         <Link to="/" className="inline-flex items-center gap-2">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-            <GiOpenBook className="h-7 w-7 text-background/30" />
+            <GiOpenBook className="h-7 w-7 text-white" />
           </div>
   
           <h1 className="font-sans text-3xl font-semibold text-primary">
@@ -21,9 +21,9 @@ const Topbar = () => {
           to="/profile"
           className="flex h-10 w-10 items-center justify-center rounded-full bg-primary"
         >
-          <User className="h-7 w-7 text-background/30" />
+          <User className="h-7 w-7 text-white"  />
         </Link>
-      </header>
+      </header> 
     )
   }
 
