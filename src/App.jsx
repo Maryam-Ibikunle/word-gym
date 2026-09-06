@@ -10,11 +10,13 @@ import React from 'react'
 import Profile from './pages/Profile'
 import Archive from './component/history/Archive'
 import Drafts from './component/history/Drafts'
+import ScrollToTop from './component/layout/ScrollToTop'
 
 const App = () => {
   return (
     
       <BrowserRouter>
+      <ScrollToTop/>
         <div className='max-h-screen overflow-y-scroll flex'>
           <Topbar/>
           <Navbar/>
