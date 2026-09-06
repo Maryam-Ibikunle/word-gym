@@ -82,10 +82,10 @@ const Write = () => {
       <article className="border border-gray-300 rounded-3xl p-4 flex flex-col gap-3 mb-5 lg:mb-15 h-3/5 lg:h-3/4">
         
           
-          <div className="relative min-h-[300px] mt-2">
+          <div className="relative min-h-75 mt-2">
             <RichTextPlugin
               contentEditable={
-                <ContentEditable className="outline-none min-h-[300px] p-3"/>
+                <ContentEditable className="outline-none min-h-75 p-3"/>
               }
               placeholder={
                 <div className="absolute top-3 left-3 text-gray-400 pointer-events-none">

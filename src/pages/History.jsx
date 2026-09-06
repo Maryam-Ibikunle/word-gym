@@ -38,12 +38,12 @@ const History = () => {
       </section>
 
       <section className='inline-flex my-5 items-center justify-between md:w-2/3 lg:w-1/2'>
-        <NavLink to="archive" className={({isActive})=>`flex items-center justify-center w-20 md:w-30 lg:w-40 lg:text-[17px] px-4 p-2 mx-2 rounded-3xl ${isActive ? "bg-gray-300 text-primary font-bold":"bg-primary text-white" }`}>Archive</NavLink>
+        <NavLink to="archive" className={({isActive})=>`flex items-center justify-center w-20 md:w-30 lg:w-40 lg:text-[17px] px-4 p-2 mx-2 rounded-3xl ${!isActive ? "bg-gray-300 text-primary font-bold":"bg-primary text-white" }`}>Archive</NavLink>
 
-        <NavLink to="drafts" className={({isActive})=>`flex items-center justify-center w-20 md:w-30 lg:w-40 lg:text-[17px] px-4 p-2 mx-2 rounded-3xl ${isActive ?"bg-gray-300 text-primary font-bold":"bg-primary text-white" }`}>Drafts</NavLink>
+        <NavLink to="drafts" className={({isActive})=>`flex items-center justify-center w-20 md:w-30 lg:w-40 lg:text-[17px] px-4 p-2 mx-2 rounded-3xl ${!isActive ?"bg-gray-300 text-primary font-bold":"bg-primary text-white" }`}>Drafts</NavLink>
 
         <div className='border-r w-1 h-9 text-gray-300 mx-2'></div>
-        <button  className={` flex items-center justify-center w-20 md:w-30 lg:w-40 lg:text-[17px] px-4 p-2 mx-2 rounded-3xl bg-primary text-white`}>Filter</button>
+        <button  className={` flex items-center justify-center w-20 md:w-30 lg:w-40 lg:text-[17px] px-4 p-2 mx-2 rounded-3xl text-primary bg-gray-300`}>Filter</button>
       </section>
       <section className="flex-1  bg-background rounded-2xl p-4 shadow-sm">
         <Outlet />
