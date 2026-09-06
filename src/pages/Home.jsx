@@ -75,7 +75,7 @@ const Home = () => {
             <section className='relative overflow-clip rounded-3xl bg-[#282726] text-center mb-10 w-full text-white p-10'>
                 <div className='absolute -top-12 -right-12 w-44 h-44 rounded-full border-18 border-[#5e142f] pointer-events-none'></div>
                 <div className='absolute -bottom-12 -left-12 w-44 h-44 rounded-full border-18 border-[#8c6d23] pointer-events-none'></div>
-                <div className='z-50 relative text-center flex flex-col items-center gap-2'>
+                <div className='z-10 relative text-center flex flex-col items-center gap-2'>
                     <div className='text-primary bg-tertiary w-10 h-10 rounded-[50%] text-2xl'>+</div>
                     <h3 className='tracking-tight font-medium text-base font-serif'>Writer's Block Clinic</h3>
                     <p className='text-sm text-neutral-300 font-light leading-relaxed'>Stuck on a plot hole? Join our AI-assisted unblocking session.</p>
