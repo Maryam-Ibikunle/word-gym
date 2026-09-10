@@ -1,8 +1,8 @@
 import React from 'react'
-import { Sparkles } from 'lucide-react';
 
-const Indicator = () => {
-    const percentage = 78;
+
+const Indicator = ({percentage, centerIcon}) => {
+
     const radius = 45;
     const circumference = 2 * Math.PI * radius;
     const offset = circumference - (percentage / 100) * circumference;
@@ -32,7 +32,8 @@ const Indicator = () => {
                 />
             </svg>
             <div className="absolute inset-0 flex items-center justify-center">
-                <Sparkles fill='#9d174d' color='#e5e7eb'/>
+                {/* <c /> */}
+                {centerIcon}
             </div>
         </div>
         )
