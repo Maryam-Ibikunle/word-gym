@@ -68,7 +68,7 @@ const Write = () => {
           <FolderBookmark className="w-5 h-5 text-primary" />
           <span>Chapter 1</span>
         </div>
-        <NavLink to="#">
+        <NavLink to="/analysis">
           <button
             type="button"
             className="inline-flex gap-2 bg-linear-to-r from-[#580707] to-primary text-white px-4 p-2 rounded-2xl cursor-pointer"

@@ -7,7 +7,7 @@ import History from './pages/History'
 import Navbar from './component/layout/Navbar'
 import Topbar from './component/layout/Topbar'
 import React from 'react'
-import Profile from './pages/Profile'
+import Analysis from './pages/Analysis'
 import Archive from './component/history/Archive'
 import Drafts from './component/history/Drafts'
 import ScrollToTop from './component/layout/ScrollToTop'
@@ -36,7 +36,7 @@ const App = () => {
               <Route path="drafts" element={<Drafts />} />
             </Route>
   
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/analysis" element={<Analysis />} />
           </Routes>
         </main>
       </div>

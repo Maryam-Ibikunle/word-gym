@@ -3,7 +3,7 @@ import { Award, Brain, TrendingUp } from 'lucide-react'
 import Indicator from '../component/progress/Indicator'
 import Progressbar from '../component/ui/Progressbar'
 
-const Profile = () => {
+const Analysis = () => {
 
   const grade = "Excellent"
   const score = 88
@@ -46,6 +46,7 @@ const Profile = () => {
           </div>
         </div>
       </section>
+      <div className='flex flex-col gap-5 md:flex-row md:gap-3 items-center'>
       <section className='flex flex-row gap-6'>
         <div className='bg-gray-50 p-7 flex flex-col rounded-2xl gap-4 w-auto md:w-60'>
           <div className='inline-flex gap-2 items-center'>
@@ -81,8 +82,9 @@ const Profile = () => {
         <i className='font-serif text-center'>"Your descriptive prose in the second paragraph created a truly visceral sense of place."</i>
         <p className='font-light text-primary'>AI Editor Note</p>
       </article>
+      </div>
     </main>
   )
 }
 
-export default Profile
+export default Analysis
