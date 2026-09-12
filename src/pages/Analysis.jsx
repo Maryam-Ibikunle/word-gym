@@ -46,9 +46,9 @@ const Analysis = () => {
           </div>
         </div>
       </section>
-      <div className='flex flex-col gap-5 md:flex-row md:gap-3 items-center'>
+      <div className='flex flex-col gap-5 md:flex-wrap md:gap-3 items-center'>
       <section className='flex flex-row gap-6'>
-        <div className='bg-gray-50 p-7 flex flex-col rounded-2xl gap-4 w-auto md:w-60'>
+        <div className='bg-gray-50 p-7 flex flex-col rounded-2xl gap-4 w-auto md:w-80'>
           <div className='inline-flex gap-2 items-center'>
             <Brain className='text-primary'/>
             <span>Strengths</span>
@@ -62,7 +62,7 @@ const Analysis = () => {
             </div>
           </div>
         </div>
-        <div className='bg-gray-50 p-7 flex flex-col rounded-2xl gap-4 w-auto md:w-60'>
+        <div className='bg-gray-50 p-7 flex flex-col rounded-2xl gap-4 w-auto md:w-80'>
           <div className='inline-flex gap-2 items-center'>
             <TrendingUp className='text-primary'/>
             <span>Focus</span>

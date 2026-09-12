@@ -10,6 +10,7 @@ import React from 'react'
 import Analysis from './pages/Analysis'
 import Archive from './component/history/Archive'
 import Drafts from './component/history/Drafts'
+import Profile from './pages/Profile'
 import ScrollToTop from './component/layout/ScrollToTop'
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
             </Route>
   
             <Route path="/analysis" element={<Analysis />} />
+            <Route path='/profile' element={<Profile/>}/>
           </Routes>
         </main>
       </div>
